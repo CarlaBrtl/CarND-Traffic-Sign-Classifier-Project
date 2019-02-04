@@ -45,14 +45,19 @@ Number of classes = 43
 Images are 32x32 RGB images
  
  Here is a sample of images with their class: 
+ 
  ![Fig 1](./writeup_images/sample_images_with_class.png)
+ 
  The class id list can be found in the `CarND-Traffic-Sign-Classifier-Project/signnames.csv` file. 
  
  Let's look at a sample of 5 images for the class 35. 
+ 
  ![Fig 2](./writeup_images/sample_image_class_35.png)
+ 
  We can see that we have images with different angles, different blurs. Looking into more examples, we could see that there are all different darkness and shadows.
  
  Here is a visualization of the classes for all the images in the training set.
+ 
  ![Fig 3](./writeup_images/training_data_visualization.png)
  
  Some classes are a lot more represented than others, we can expect that those classes will be found more easily by the trained model. 
