@@ -138,14 +138,14 @@ Images are 32x32 RGB images
  ![Fig 5](./test_images/roundabout.jpg) 
  The roundabout sign is a little more complicated, it has a lot of copy right stamps on it, that might confurse our model. Let's run it: 
  
- Softmax result: 
+
  ![Fig 3](./writeup_images/softmax_roundabout.png)
  
  Unfortunately, the model didn't recognize this sign, it miscategorized it as an ahead only sign. Some of it might be the color of the sign, and the white lines in the middle of the image. 
  Theo biggest shortcoming I can see here is how sure the model thinks it is an ahead only sign. 
  In the training set there are 3 times more straight ahead signs than round about signs. That probably explains why the model tends towars the straghtahead sign when the image is mostly blue.
  
- 
+#### Overall results
  
  The overall accuracy on those 5 images is: 0.8
  The validation set had a 93.2% accuracy, the test set has an accuracy that is lower, but it is not surprising as 1 image been misclassified affects the accuracy more than in a bigger set. 
