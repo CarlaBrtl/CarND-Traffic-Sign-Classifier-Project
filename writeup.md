@@ -91,29 +91,40 @@ Images are 32x32 RGB images
  Converted them to  a 32x32 image, preprocessed them, then ran them through the `LeNet` method to get the logits for these pictures. 
  
  For each image, let's have a look at the expectation vs result we got. 
- ![Fig 4](./test_images/yield.jpg) 
- Yield sign, class 13
- 
- Softmax result: 
- 
- ![Fig 5](./test_images/roundabout.jpg) 
- Roundabout sign, class 40
- 
- Softmax result: 
- 
+  #### Caution sign, class 25
  ![Fig 6](./test_images/caution.jpg)
- Caution sign, class 25
+ 
  
  Softmax result: 
+  ![Fig 3](./writeup_images/softmax_caution.png)
  
- ![Fig 7](./test_images/do_not_enter.jpg)
- Do not enter sign, class 17
+  #### Do not enter sign, class 17
+ ![Fig 7](./test_images/softmax_do_not_enter.jpg)
+
+ Softmax result:  
+ ![Fig 3](./writeup_images/training_data_visualization.png)
  
+  ####50 km/h speed limit sign, class 2
  ![Fig 8](./test_images/speedlimit50.jpg)
- 50 km/h speed limit sign, class 2
+ Softmax result: 
+ ![Fig 3](./writeup_images/softmax_50kmh.png)
+  
+ 
+ ####  Yield sign, class 13
+ ![Fig 4](./test_images/yield.jpg) 
+
  
  Softmax result: 
+ ![Fig 3](./writeup_images/softmax_yield.png)
+ 
+ #### Roundabout sign, class 40 - output class 35
+ ![Fig 5](./test_images/roundabout.jpg) 
+
+ 
+ Softmax result: 
+ ![Fig 3](./writeup_images/softmax_roundabout.png)
  
  
- The overall accuracy on those 5 images is: TODO
+ 
+ The overall accuracy on those 5 images is: 0.8
  Compare to the result on the validation set
